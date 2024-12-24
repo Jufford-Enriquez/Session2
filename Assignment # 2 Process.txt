@@ -1,0 +1,99 @@
+Assignment # 2 
+
+Create a GitHub workflow that will run a python file which will display the contents of a csv file as a report. Please use the csv file included in this assignment (filename: data.csv)
+
+The python file should be executed using the following commands:
+python convert.py --input data.csv
+
+the csv filename should not be hardcoded into your python file
+The GitHub workflow should run in your own VM
+The logs on your workflow should be similar to the following format:
+| id | name | hash |
+| 123 | john | #f1a |
+
+Submit your python file here, then include a link to your GitHub repository.
+
+If your repository is set to private, please add 'stonedleaf' to the repository's list of viewers / collaborators. This can be found in your repository Settings.
+
+
+Create a python File that read and display the csv File with the same format as this 
+| id | name | hash |
+| 123 | john | #f1a |
+
+
+1. How to Create a GitHub workflow ✓
+	a. How to Create a GitHub workflow that will run a python file
+Answer:
+
+2.  How to make GitHub workflow run a python file which will display the contents of a csv file 
+	a. How to  display the contents of a csv file as a report.
+Answer:
+
+
+3. How to execute the python file using the command "python convert.py --input data.csv"
+Answer:
+
+
+4. How to make  GitHub workflow run in your own VM
+Answer:
+
+
+5. How the logs on your workflow should be similar to the following format?
+| id | name | hash |
+| 123 | john | #f1a |
+Answer:
+
+
+
+Lesson of the day December 4 2024
+1. Create a github workflow for the python file to be read.
+	A. Create a yml file to read PythonFile in the same workflow
+
+2. Add/create a python File to the same workflow named "greetings.py" 
+
+In Order to run a python file you have to read the python file in the script by calling the file name 
+
+
+for yaml file code to run python file:
+name: Run Python Script
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the code
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Python
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10  # Specify the Python version
+
+    # Step 3: Install dependencies (optional)
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # If your script has dependencies
+
+    # Step 4: Run the Python script
+    - name: Run Python script
+      run: python script.py  # Replace 'script.py' with your file name
+
+
+
+import argparse 
+parser = argpars.ArgumentParser()
+args = parser.parse_args()
+
+import argparse
+parser = argparse.ArgumentParser()
+arg = parser.parse_args

@@ -1,0 +1,44 @@
+# # displaying logs of fruits.csv
+
+# f = open("data.csv")
+# line = f.readline()
+# print (line)
+# f .close()
+
+# # # Exception Handling 
+# # # a = 1/0 
+
+# # # try:
+# # #     number =input('Enter a number:')
+
+# # #    # Checking the variable type 'print(type(number))'
+# # #     number=int (number)
+   
+# # #     if number ==0:
+# # #         raise ValueError("Invalid number")
+
+# # # # Error Processing
+# # # except:
+# # #     print("We have an error !")
+
+# # # print('code finish')
+
+# # #Exception Handling - Process Specific Errors
+# # try:
+# #     number = input('Enter a number ')
+# #     if number == 0:
+# #             raise NameError
+# #     elif number == 1:
+# #         raise ValueError('Invalid input')
+# # except ValueError:
+# #     print('Value is invalid')
+# # except:
+# #     print('We have an error')
+# #     print('Code Finished')   
+
+
+# # # import argparse
+# # # import csv
+
+# # # def display_csv()
+
