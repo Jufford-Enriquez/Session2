@@ -18,5 +18,5 @@ with open("data.csv","r") as f:         # Create a CSV reader object to process 
             print(f"|{'|'.join(row)}|") # Format and print the data row, joining values with ' | '.
             
 with open(args.input, "r") as f:
-    # Process the file
+    # Process the file.
     pass  
