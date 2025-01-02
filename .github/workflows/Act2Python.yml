@@ -22,5 +22,5 @@ jobs:
 
       - name: Run Act2 Python script with CSV file
         run: >
-          python Act2.py --input data.csv  # Adjust this command as per your
+          python convert.py --input data.csv  # Adjust this command as per your
           script's needs
